@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#77D2D2</color>
+    <color name="colorPrimaryDark">#4CAEAE</color>
+    <color name="colorAccent">#D8FAFA</color>
+    <color name="backGround">#FEFFFF</color>
+    <color name="btnTextColor">#FFFFFF</color>
+    <color name="grayText">#808080</color>
+    <color name="black">#000</color>
+
+    <color name="customerTextColour">#827E72</color>
+    <color name="customerPageTitle">#5E6472</color>
+    <color name="customerBigTitle">#C5817A</color>
+</resources>

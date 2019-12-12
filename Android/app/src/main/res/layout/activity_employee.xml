@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/backGround"
+      android:gravity="center"
+      android:orientation="vertical"
+      tools:context=".EmployeeActivity">
+
+        <Button
+          android:id="@+id/button_authenticate_new_user"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginTop="25dp"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/authenticate_new_employee"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/signin"/>
+
+        <Button
+          android:id="@+id/button_make_new_user"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/make_new_user"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/new_person"/>
+
+        <Button
+          android:id="@+id/button_make_new_account"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/make_new_account"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/account"/>
+
+        <Button
+          android:id="@+id/button_employee_create"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/make_new_employee"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/new_person"/>
+
+        <Button
+          android:id="@+id/button_restock_inventory"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/add_items_to_store"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/cart"/>
+
+        <Button
+          android:id="@+id/exit_btn"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/exit"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/exit"/>
+
+    </LinearLayout>
+</ScrollView>

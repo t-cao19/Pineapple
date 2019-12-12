@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ActivityAddItem">
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="20sp"
+      android:text="@string/remove_item_from_cart"
+      android:textAlignment="center"
+      android:textColor="@color/customerBigTitle"
+      android:textSize="35sp" />
+
+    <TextView
+      android:id="@+id/remove_list_all_items"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="25sp"
+      android:textAlignment="center"
+      android:textColor="@color/customerTextColour"
+      android:textSize="20sp" />
+
+    <EditText
+      android:id="@+id/remove_itemId"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:backgroundTint="@color/colorPrimary"
+      android:ems="15"
+      android:hint="@string/prompt_item_id"
+      android:importantForAutofill="no"
+      android:inputType="number"
+      android:textColor="@color/black" />
+
+    <EditText
+      android:id="@+id/remove_itemQuantity"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:backgroundTint="@color/colorPrimary"
+      android:ems="15"
+      android:hint="@string/prompt_item_quantity"
+      android:importantForAutofill="no"
+      android:inputType="number"
+      android:textColor="@color/black" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:gravity="center">
+
+      <Button
+        android:id="@+id/action_remove_item"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/btn_height"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/remove_item"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/remove_cart" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>

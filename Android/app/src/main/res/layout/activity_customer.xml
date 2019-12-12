@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="@color/backGround">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/backGround"
+          android:gravity="center"
+          android:orientation="vertical"
+          tools:context=".CustomerActivity">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              tools:showIn="@layout/activity_customer"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context=".CustomerActivity">
+
+                <com.synnapps.carouselview.CarouselView
+
+                  android:id="@+id/carouselView"
+
+                  android:layout_width="match_parent"
+
+                  android:layout_height="200dp"
+
+                  app:fillColor="@color/backGround"
+
+                  app:pageColor="@color/colorPrimary"
+
+                  app:radius="3dp"
+
+                  app:slideInterval="6000"
+
+                  app:strokeColor="@color/btnTextColor"
+
+                  app:strokeWidth="1dp" />
+
+            </RelativeLayout>
+
+
+            <Button
+              android:id="@+id/button_items_in_cart"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginTop="25dp"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/items_in_cart"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/cart" />
+
+            <Button
+              android:id="@+id/button_add_item_to_cart"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/add_item_to_cart"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/add_cart" />
+
+            <Button
+              android:id="@+id/button_total_price"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/total_price"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/money" />
+
+            <Button
+              android:id="@+id/button_remove_item_from_cart"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/remove_item_from_cart"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/remove_cart" />
+
+            <Button
+              android:id="@+id/button_check_out"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/check_out"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/receipt" />
+
+            <Button
+              android:id="@+id/button_restore_shopping_cart"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/restore_shopping_cart"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/cart" />
+
+            <Button
+              android:id="@+id/button_save_shopping_cart"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/save_shopping_cart"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/save" />
+
+            <Button
+              android:id="@+id/exit_btn"
+              style="@android:style/Widget.Holo.Button"
+              android:layout_width="@dimen/btn_width"
+              android:layout_height="@dimen/btn_height"
+              android:layout_marginBottom="25sp"
+              android:backgroundTint="@color/colorPrimaryDark"
+              android:text="@string/exit"
+              android:textColor="@color/btnTextColor"
+              app:icon="@drawable/exit" />
+
+        </LinearLayout>
+</ScrollView>
+
+

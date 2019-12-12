@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".RestockInventoryActivity">
+
+    <TextView
+      android:id="@+id/item_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="30dp"
+      android:layout_marginVertical="30dp"
+      android:text="" />
+
+    <EditText
+      android:id="@+id/itemId"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:ems="15"
+      android:hint="@string/item_id"
+      android:textColor="@color/black"
+      android:backgroundTint="@color/colorPrimary"
+      android:importantForAutofill="no"
+      android:inputType="textPersonName" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <Button
+        android:id="@+id/decrease"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="decreaseInteger"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/minus" />
+
+      <EditText
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/zero"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/colorPrimary"/>
+
+      <Button
+        android:id="@+id/increase"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="increaseInteger"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/plus" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/confirmation"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="70dp"
+      android:layout_marginBottom="20dp"
+      android:text="" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="30dp"
+      android:gravity="center">
+
+      <Button
+        android:id="@+id/action_restock"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/action_restock"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/cart"/>
+
+      <Button
+        android:id="@+id/exit_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/exit"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/exit"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>

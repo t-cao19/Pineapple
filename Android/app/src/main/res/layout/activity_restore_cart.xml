@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/backGround"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".ActivityAddItem">
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/restore_shopping_cart"
+    android:textAlignment="center"
+    android:textSize="40sp"
+    android:textColor="@color/customerBigTitle"
+    android:paddingBottom="20sp"/>
+
+  <TextView
+    android:id="@+id/display_accounts_restore"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textSize="25sp"
+    android:textColor="@color/customerTextColour" />
+
+  <EditText
+    android:id="@+id/save_accountId_restore"
+    style="@android:style/Widget.EditText"
+    android:layout_width="match_parent"
+    android:layout_height="64sp"
+    android:layout_marginHorizontal="35dp"
+    android:layout_marginBottom="32sp"
+    android:ems="15"
+    android:hint="@string/prompt_account_ID"
+    android:textColor="@color/black"
+    android:backgroundTint="@color/colorPrimary"
+    android:importantForAutofill="no"
+    android:inputType="number" />
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:gravity="center">
+
+    <Button
+      android:id="@+id/action_submit_account_restore"
+      style="@android:style/Widget.Holo.Button"
+      android:layout_width="200sp"
+      android:layout_height="@dimen/btn_height"
+      android:backgroundTint="@color/colorPrimaryDark"
+      android:text="@string/submit"
+      android:textColor="@color/btnTextColor"
+      app:icon="@drawable/submit" />
+
+  </LinearLayout>
+
+</LinearLayout>

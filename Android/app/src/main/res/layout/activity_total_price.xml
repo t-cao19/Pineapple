@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/backGround"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".ActivityViewCart">
+
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/total_price"
+    android:textAlignment="center"
+    android:textSize="45sp"
+    android:textColor="@color/customerBigTitle"
+    android:paddingBottom="20sp"/>
+
+  <TextView
+    android:id="@+id/total_price"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAlignment="center"
+    android:textSize="30sp"
+    android:textColor="@color/customerTextColour" />
+
+</LinearLayout>

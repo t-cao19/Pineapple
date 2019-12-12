@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".SerializeActivity">
+
+    <TextView
+      android:id="@+id/prompt_promote"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="70dp"
+      android:layout_marginBottom="20dp"
+      android:paddingTop="20sp"
+      android:text="@string/prompt_ser"
+      android:textAlignment="center"
+      android:textSize="25sp" />
+
+    <TextView
+      android:id="@+id/result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="70dp"
+      android:layout_marginBottom="20dp"
+      android:text="" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center">
+
+      <Button
+        android:id="@+id/ser_submit_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Yes"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/thumb_up" />
+
+      <Button
+        android:id="@+id/ser_exit_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/exit"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/thumb_down" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>
+

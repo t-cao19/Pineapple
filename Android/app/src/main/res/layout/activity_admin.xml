@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/backGround"
+      android:gravity="center"
+      android:orientation="vertical"
+      tools:context=".AdminActivity">
+
+        <Button
+          android:id="@+id/button_promote_employee"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/promote_employee"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/promote"/>
+
+        <Button
+          android:id="@+id/button_view_books"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/view_books"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/books"/>
+
+        <Button
+          android:id="@+id/button_view_inactive"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/view_inactive"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/thumb_down"/>
+
+        <Button
+          android:id="@+id/button_view_active"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/view_active"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/thumb_up"/>
+
+        <Button
+          android:id="@+id/button_serialize"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/serialize"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/lock"/>
+
+        <Button
+          android:id="@+id/button_deserialize"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/deserialize"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/unlock"/>
+
+        <Button
+          android:id="@+id/button_exit"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="@dimen/btn_width"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginBottom="32sp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/exit"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/exit"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".NewAdminActivity">
+
+    <EditText
+      android:id="@+id/admin_name"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginBottom="32sp"
+      android:ems="15"
+      android:hint="@string/prompt_name"
+      android:textColor="@color/black"
+      android:backgroundTint="@color/colorPrimary"
+      android:importantForAutofill="no"
+      android:inputType="textPersonName" />
+
+    <EditText
+      android:id="@+id/age"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:ems="15"
+      android:hint="@string/prompt_age"
+      android:textColor="@color/black"
+      android:backgroundTint="@color/colorPrimary"
+      android:importantForAutofill="no"
+      android:inputType="textPersonName" />
+
+    <EditText
+      android:id="@+id/address"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:ems="15"
+      android:hint="@string/prompt_address"
+      android:textColor="@color/black"
+      android:backgroundTint="@color/colorPrimary"
+      android:importantForAutofill="no"
+      android:inputType="textPersonName" />
+
+    <EditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:ems="10"
+      android:hint="@string/prompt_password"
+      android:textColor="@color/black"
+      android:backgroundTint="@color/colorPrimary"
+      android:importantForAutofill="no"
+      android:inputType="textPassword" />
+
+    <TextView
+      android:id="@+id/id_display"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="20dp"
+      android:layout_marginHorizontal="70dp"
+      android:text=""/>
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center">
+
+      <Button
+        android:id="@+id/sign_up_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/action_sign_up"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/new_person"/>
+
+      <Button
+        android:id="@+id/exit_btn"
+        style="@android:style/Widget.Holo.Button"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/btn_height"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="@string/exit"
+        android:textColor="@color/btnTextColor"
+        app:icon="@drawable/exit"/>
+    </LinearLayout>
+
+  </LinearLayout>
+</ScrollView>

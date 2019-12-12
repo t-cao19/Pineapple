@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/backGround"
+  android:gravity="center"
+  android:orientation="vertical"
+  tools:context=".PromoteEmployeeActivity">
+
+    <TextView
+      android:id="@+id/prompt_promote"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="70dp"
+      android:layout_marginBottom="20dp"
+      android:text="@string/prompt_inactive_acc" />
+
+    <TextView
+      android:id="@+id/customer_id_list"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="70dp"
+      android:layout_marginBottom="20dp"
+      android:text="" />
+
+    <EditText
+      android:id="@+id/input_userId"
+      style="@android:style/Widget.EditText"
+      android:layout_width="match_parent"
+      android:layout_height="64sp"
+      android:layout_marginHorizontal="35dp"
+      android:layout_marginBottom="32sp"
+      android:backgroundTint="@color/colorPrimary"
+      android:ems="15"
+      android:hint="@string/customer_id"
+      android:importantForAutofill="no"
+      android:inputType="textPersonName"
+      android:textColor="@color/black" />
+
+    <TextView
+      android:id="@+id/result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginHorizontal="70dp"
+      android:layout_marginBottom="20dp"
+      android:text="" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center">
+        <Button
+          android:id="@+id/submit_btn"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="150dp"
+          android:layout_height="@dimen/btn_height"
+          android:layout_marginEnd="30dp"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/action_submit"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/submit" />
+
+        <Button
+          android:id="@+id/exit_btn"
+          style="@android:style/Widget.Holo.Button"
+          android:layout_width="150dp"
+          android:layout_height="@dimen/btn_height"
+          android:backgroundTint="@color/colorPrimaryDark"
+          android:text="@string/exit"
+          android:textColor="@color/btnTextColor"
+          app:icon="@drawable/exit" />
+
+    </LinearLayout>
+
+</LinearLayout>

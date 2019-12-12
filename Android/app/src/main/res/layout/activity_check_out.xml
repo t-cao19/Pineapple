@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@color/backGround">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backGround"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ActivityViewCart">
+
+    <TextView
+      android:id="@+id/textView"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="40sp"
+      android:text="@string/check_out"
+      android:textAlignment="center"
+      android:textColor="@color/customerBigTitle"
+      android:textSize="45sp" />
+
+    <TextView
+      android:id="@+id/display_total_price"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="15sp"
+      android:text="@string/total_price"
+      android:textAlignment="center"
+      android:textColor="@color/customerPageTitle"
+      android:textSize="35sp" />
+
+    <TextView
+      android:id="@+id/checkout_total"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textAlignment="center"
+      android:textColor="@color/customerTextColour"
+      android:textSize="30sp" />
+
+    <TextView
+      android:id="@+id/display_cart_time"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="15sp"
+      android:text="@string/items_in_cart"
+      android:textAlignment="center"
+      android:textColor="@color/customerPageTitle"
+      android:textSize="35sp" />
+
+    <TextView
+      android:id="@+id/checkout_items"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingBottom="15sp"
+      android:textAlignment="center"
+      android:textColor="@color/customerTextColour"
+      android:textSize="25sp" />
+
+    <Button
+      android:id="@+id/action_confirm_checkout"
+      style="@android:style/Widget.Holo.Button"
+      android:layout_width="210dp"
+      android:layout_height="@dimen/btn_height"
+      android:backgroundTint="@color/colorPrimaryDark"
+      android:text="@string/confirm_checkout"
+      android:textColor="@color/btnTextColor"
+      app:icon="@drawable/cart" />
+
+  </LinearLayout>
+</ScrollView>
