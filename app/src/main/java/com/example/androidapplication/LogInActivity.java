@@ -1,5 +1,10 @@
 package com.example.androidapplication;
 
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.widget.Button;
 import android.os.Bundle;
@@ -15,13 +20,16 @@ import com.b07.users.Admin;
 import com.b07.users.Employee;
 import com.b07.users.Customer;
 import com.b07.users.User;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Open login activity.
  */
-public class LogInActivity extends AppCompatActivity {
+public class LogInActivity extends AppCompatActivity implements OnItemSelectedListener {
 
     private Button logIn;
+    private String role;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +42,19 @@ public class LogInActivity extends AppCompatActivity {
             initializeActivity();
         }
 
+        Spinner spinner = (Spinner) findViewById(R.id.roles);
+        spinner.setOnItemSelectedListener(this);
+
+        List<String> roles = new ArrayList<String>();
+        roles.add("Customer");
+        roles.add("Employee");
+        roles.add("Admin");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, roles);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
         logIn = findViewById(R.id.button_log_in);
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +62,16 @@ public class LogInActivity extends AppCompatActivity {
                 validate();
             }
         });
+    }
+
+    public void onItemSelected(AdapterView<?> parent, View view,
+            int pos, long id) {
+        // An item was selected. You can retrieve the selected item using
+        role = parent.getItemAtPosition(pos).toString();
+    }
+
+    public void onNothingSelected(AdapterView<?> parent) {
+        // Another interface callback
     }
 
     /**
@@ -118,20 +149,33 @@ public class LogInActivity extends AppCompatActivity {
                         }
                     });
         } else {
-
-            if (userInfo instanceof Admin) {
-                //launch AdminActivity
-                Intent intent = new Intent(this, AdminActivity.class);
-                startActivity(intent);
-            } else if (userInfo instanceof Employee) {
-                //launch employee activity
-                Intent intent = new Intent(this, EmployeeActivity.class);
-                startActivity(intent);
-            } else if (userInfo instanceof Customer) {
-                //launch customer Activity
-                Intent intent = new Intent(this, CustomerActivity.class);
-                intent.putExtra("Username", userId);
-                startActivity(intent);
+            if (role.equals("Admin")) {
+                if (userInfo instanceof Admin) {
+                    //launch AdminActivity
+                    Intent intent = new Intent(this, AdminActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(this, "Not a valid Admin account!", Toast.LENGTH_SHORT).show();
+                }
+            } else if (role.equals("Employee")) {
+                if (userInfo instanceof Employee) {
+                    //launch employee activity
+                    Intent intent = new Intent(this, EmployeeActivity.class);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(this, "Not a valid Employee account!", Toast.LENGTH_SHORT).show();
+                }
+            } else if (role.equals("Customer")) {
+                if (userInfo instanceof Customer) {
+                    //launch customer Activity
+                    Intent intent = new Intent(this, CustomerActivity.class);
+                    intent.putExtra("Username", userId);
+                    startActivity(intent);
+                } else {
+                    Toast.makeText(this, "Not a valid Customer account!", Toast.LENGTH_SHORT).show();
+                }
+            } else {
+                Toast.makeText(this, "Select a role!", Toast.LENGTH_SHORT).show();
             }
         }
     }
