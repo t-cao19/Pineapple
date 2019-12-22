@@ -36,7 +36,7 @@
       android:ems="15"
       android:hint="@string/employee_id"
       android:importantForAutofill="no"
-      android:inputType="textPersonName"
+      android:inputType="number"
       android:textColor="@color/black" />
 
     <ListView

@@ -43,7 +43,7 @@
       android:ems="15"
       android:hint="@string/prompt_user"
       android:importantForAutofill="no"
-      android:inputType="textPersonName"
+      android:inputType="number"
       android:textColor="@color/black" />
 
     <EditText
