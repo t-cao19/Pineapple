@@ -29,12 +29,12 @@
       android:layout_height="64sp"
       android:layout_marginHorizontal="35dp"
       android:layout_marginBottom="32sp"
+      android:backgroundTint="@color/colorPrimary"
       android:ems="15"
       android:hint="@string/item_id"
-      android:textColor="@color/black"
-      android:backgroundTint="@color/colorPrimary"
       android:importantForAutofill="no"
-      android:inputType="textPersonName" />
+      android:inputType="number"
+      android:textColor="@color/black" />
 
     <LinearLayout
       android:layout_width="match_parent"
@@ -46,10 +46,10 @@
         android:id="@+id/decrease"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:onClick="decreaseInteger"
-        android:textColor="@color/black"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/minus" />
+        android:onClick="decreaseInteger"
+        android:text="@string/minus"
+        android:textColor="@color/black" />
 
       <EditText
         android:id="@+id/quantity"
@@ -59,20 +59,21 @@
         android:layout_marginTop="16dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:inputType="number"
         android:text="@string/zero"
-        android:textSize="50sp"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:backgroundTint="@color/colorPrimary"/>
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
       <Button
         android:id="@+id/increase"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:onClick="increaseInteger"
-        android:textColor="@color/black"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/plus" />
+        android:onClick="increaseInteger"
+        android:text="@string/plus"
+        android:textColor="@color/black" />
     </LinearLayout>
 
     <TextView
@@ -98,7 +99,7 @@
         android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/action_restock"
         android:textColor="@color/btnTextColor"
-        app:icon="@drawable/cart"/>
+        app:icon="@drawable/cart" />
 
       <Button
         android:id="@+id/exit_btn"
@@ -108,7 +109,7 @@
         android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/exit"
         android:textColor="@color/btnTextColor"
-        app:icon="@drawable/exit"/>
+        app:icon="@drawable/exit" />
 
     </LinearLayout>
 
