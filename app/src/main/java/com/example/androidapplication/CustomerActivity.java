@@ -12,6 +12,7 @@ import com.b07.database.DatabaseSelectHelper;
 import com.b07.database.DatabaseUpdateHelper;
 import com.b07.inventory.InventoryImpl;
 import com.b07.store.ShoppingCart;
+import com.b07.store.ShoppingCartImpl;
 import com.b07.users.Customer;
 import com.b07.inventory.Item;
 import com.synnapps.carouselview.CarouselView;
@@ -69,7 +70,7 @@ public class CustomerActivity extends AppCompatActivity {
         }
 
         DatabaseSelectHelper selectDb = new DatabaseSelectHelper(this);
-        this.shopCart = new ShoppingCart((Customer) selectDb.getUserDetailsHelper(this.customerId),
+        this.shopCart = new ShoppingCartImpl((Customer) selectDb.getUserDetailsHelper(this.customerId),
                 this);
 
         viewCart = findViewById(R.id.button_items_in_cart);

@@ -15,6 +15,6 @@ public class ActivityTotalPrice extends AppCompatActivity {
         setContentView(R.layout.activity_total_price);
 
         TextView view = findViewById(R.id.total_price);
-        view.setText(getIntent().getStringExtra("TOTAL"));
+        view.setText("$" + getIntent().getStringExtra("TOTAL"));
     }
 }
