@@ -330,7 +330,9 @@ public class CustomerActivity extends AppCompatActivity {
                         this.shopCart.addItem(oneItem, entry.getValue());
                     }
                     Toast.makeText(this, "Successfully restored cart!", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else if (!selectDb.getUserActiveAccountsHelper(this.customerId).contains(accountId)
+                && !selectDb.getUserActiveAccountsHelper(this.customerId).isEmpty()){
                     Toast.makeText(this, "Invalid account ID!!", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -354,7 +356,8 @@ public class CustomerActivity extends AppCompatActivity {
                         }
                     }
                     Toast.makeText(this, "Successfully saved cart!", Toast.LENGTH_SHORT).show();
-                } else {
+                } else if (!selectDb.getUserActiveAccountsHelper(this.customerId).contains(accountId)
+                && !selectDb.getUserActiveAccountsHelper(this.customerId).isEmpty()){
                     Toast.makeText(this, "Invalid account ID!", Toast.LENGTH_SHORT).show();
                 }
             }

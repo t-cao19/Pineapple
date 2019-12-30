@@ -119,7 +119,7 @@ public class LogInActivity extends AppCompatActivity implements OnItemSelectedLi
             //print out try again
             AlertDialog.Builder dlgAlert = new AlertDialog.Builder(this);
 
-            dlgAlert.setMessage("User id must be not blank!");
+            dlgAlert.setMessage("Invalid ID!");
             dlgAlert.setTitle("Error Message");
             dlgAlert.setPositiveButton("OK", null);
             dlgAlert.setCancelable(true);
