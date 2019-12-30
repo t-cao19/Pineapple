@@ -67,4 +67,6 @@
   <string name="current_cart">Current Items in Cart:</string>
   <string name="prompt_item_id">Item ID</string>
 
+  <string name="store_name">Pineapple Store</string>
+
 </resources>

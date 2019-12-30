@@ -9,74 +9,69 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-
+    <activity android:name=".splash_screen" android:theme="@style/Theme.AppCompat.NoActionBar">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
     <activity
       android:name=".ActivitySaveCart"
-      android:label="Save Cart"/>
+      android:label="Save Cart" />
     <activity
       android:name=".ActivityRestoreCart"
-      android:label="Restore Shopping Cart"/>
+      android:label="Restore Shopping Cart" />
     <activity
       android:name=".ActivityCheckOut"
-      android:label="Check Out"/>
+      android:label="Check Out" />
     <activity
       android:name=".ActivityRemoveItem"
-      android:label="Remove Cart Item"/>
+      android:label="Remove Cart Item" />
     <activity
       android:name=".ActivityTotalPrice"
-      android:label="Total Cart Price"/>
+      android:label="Total Cart Price" />
     <activity
       android:name=".ActivityAddItem"
-      android:label="Add Item"/>
+      android:label="Add Item" />
     <activity
       android:name=".ActivityViewCart"
       android:label="View Cart" />
-
     <activity
       android:name=".PromoteEmployeeActivity"
-      android:label="Promote Employee"/>
-
+      android:label="Promote Employee" />
     <activity
       android:name=".ViewBookActivity"
-      android:label="View Books"/>
-
+      android:label="View Books" />
     <activity
       android:name=".InactiveAccActivity"
-      android:label="Inactive Accounts"/>
-
+      android:label="Inactive Accounts" />
     <activity
       android:name=".ActiveAccActivity"
-      android:label="Active Accounts"/>
-
+      android:label="Active Accounts" />
     <activity
       android:name=".SerializeActivity"
-      android:label="Serialize">
-    </activity>
-
+      android:label="Serialize"></activity>
     <activity
       android:name=".DeserializeActivity"
-      android:label="Deserialize"/>
-
+      android:label="Deserialize" />
     <activity
       android:name=".NewUserActivity"
-      android:label="Create Customer"/>
-
+      android:label="Create Customer" />
     <activity
       android:name=".NewAdminActivity"
-      android:label="Create Admin"/>
+      android:label="Create Admin" />
     <activity
       android:name=".NewAccountActivity"
-      android:label="Create Account"/>
+      android:label="Create Account" />
     <activity
       android:name=".RestockInventoryActivity"
-      android:label="Restock Inventory"/>
+      android:label="Restock Inventory" />
     <activity
       android:name=".NewEmployeeActivity"
-      android:label="Create Employee"/>
+      android:label="Create Employee" />
     <activity
       android:name=".AuthenticateEmployeeActivity"
-      android:label="Authenticate Employee"/>
-
+      android:label="Authenticate Employee" />
     <activity
       android:name=".CustomerActivity"
       android:label="Customer">
@@ -84,7 +79,6 @@
         <action android:name="android.intent.action.MAIN" />
       </intent-filter>
     </activity>
-
     <activity
       android:name=".AdminActivity"
       android:label="Admin">
@@ -104,11 +98,9 @@
       android:label="Pineapple">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
-
-        <category android:name="android.intent.category.LAUNCHER" />
+        <category android:name="android.intent.category.DEFAULT" />
       </intent-filter>
     </activity>
-
     <activity
       android:name=".MainActivity"
       android:label="@string/initialization">
