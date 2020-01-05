@@ -12,6 +12,7 @@ import com.b07.database.DatabaseSelectHelper;
 import com.b07.database.DatabaseUpdateHelper;
 import com.b07.inventory.InventoryImpl;
 import com.b07.store.ShoppingCart;
+import com.b07.store.ShoppingCartImpl;
 import com.b07.users.Customer;
 import com.b07.inventory.Item;
 import com.synnapps.carouselview.CarouselView;
@@ -69,7 +70,7 @@ public class CustomerActivity extends AppCompatActivity {
         }
 
         DatabaseSelectHelper selectDb = new DatabaseSelectHelper(this);
-        this.shopCart = new ShoppingCart((Customer) selectDb.getUserDetailsHelper(this.customerId),
+        this.shopCart = new ShoppingCartImpl((Customer) selectDb.getUserDetailsHelper(this.customerId),
                 this);
 
         viewCart = findViewById(R.id.button_items_in_cart);
@@ -329,7 +330,9 @@ public class CustomerActivity extends AppCompatActivity {
                         this.shopCart.addItem(oneItem, entry.getValue());
                     }
                     Toast.makeText(this, "Successfully restored cart!", Toast.LENGTH_SHORT).show();
-                } else {
+                }
+                else if (!selectDb.getUserActiveAccountsHelper(this.customerId).contains(accountId)
+                && !selectDb.getUserActiveAccountsHelper(this.customerId).isEmpty()){
                     Toast.makeText(this, "Invalid account ID!!", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -353,7 +356,8 @@ public class CustomerActivity extends AppCompatActivity {
                         }
                     }
                     Toast.makeText(this, "Successfully saved cart!", Toast.LENGTH_SHORT).show();
-                } else {
+                } else if (!selectDb.getUserActiveAccountsHelper(this.customerId).contains(accountId)
+                && !selectDb.getUserActiveAccountsHelper(this.customerId).isEmpty()){
                     Toast.makeText(this, "Invalid account ID!", Toast.LENGTH_SHORT).show();
                 }
             }

@@ -11,4 +11,5 @@
     <color name="customerTextColour">#827E72</color>
     <color name="customerPageTitle">#5E6472</color>
     <color name="customerBigTitle">#C5817A</color>
+    <color name="splashScreenColour">#4caf50</color>
 </resources>
